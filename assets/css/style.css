@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+:root {
+  --secondary-color: rgb(0 0 0 / 80%);
+  --green-color: #01d28e;
+}
+
+/* header start */
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;  
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.col{
+    width: 50%;
+}
+a{
+    text-decoration: none;
+}
+.logo a {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+.logo a span {
+    color: var(--green-color);
+}
+ul{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+ul li a{
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+ul li a:hover{
+    color: var(--green-color);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+ #menu-toggle {
+      display: none;
+    }
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+/* header end */
+
+/* hero section start*/
+.hero{
+    background-image: url(../images/bg_1.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.hero_container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.hero_content{
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.hero_content h1{
+    color: #ffff;
+    font-size: 44px;
+    font-weight: 700;
+}
+.hero_content p{
+    color: #ffff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+/* hero section end*/
+
+/* third section start */
+.form_container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.form_row{
+    display: flex;
+    flex-direction: row;
+}
+.form_col_1{
+    width: 40%;
+    background-color: #1089ff !important;
+    display: flex;
+    justify-content: center;
+}
+.form_col_2{
+    width: 60%;
+    display: flex;
+    align-items: center !important;
+}
+.form_box_1 form{
+    padding: 30px;
+}
+.form_box_1 form h2{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    justify-content: center;
+}
+.form_group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.form_group_2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+.form_group_box1{
+    margin: 0px 8px 16px 0px;
+}
+.form_group_box2{
+    margin: 0px 0px 16px 8px;
+}
+.form_box_1 form label{
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.form_control {
+    border: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    height: 40px !important;
+    background: transparent !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 12px;
+    border-radius: 0px;
+    box-shadow: none !important;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+
+.form_btn{
+    background: var(--green-color);
+    border: 1px solid var(--green-color) !important;
+    color: #fff !important;
+    padding: 16px 24px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.form_box{
+    padding:64px 48px;
+    background-color: white;
+    box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
+}
+
+.heading_section {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.form_box_row{
+    display: flex;
+    flex-direction: row;
+}
+
+.form_box_col{
+    width: 30%;
+    padding: 0px 15px 0px 15px;
+}
+
+.form_box_col_content{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box_icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.box_icon img{
+    width: 40px;
+    height: 40px;
+    color: #1089ff;
+}
+
+.box_content{
+    text-align: center;        
+}
+
+.box_content h3{
+    font-size: 17px;
+    color: var(--secondary-color);
+}
+@media (max-width: 992px) {
+     ul{
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        flex-direction: row;
+        text-align: center;
+    }
+
+     .form_row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form_col_1{
+        width: 40%;
+        background-color: #1089ff !important;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .form_control {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+      nav{
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+      }
+
+
+      .menu-icon {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+      }
+
+    .toggle-btn {
+        display: none; 
+    }
+
+    ul{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero{
+        background-image: url(../images/bg_1.jpg);
+        background-position: 27% 34%;
+    }
+
+    .hero_content{
+        padding: 100px;
+    }
+
+    .hero_content h1{
+        color: #ffff;
+        font-size: 44px;
+    }
+
+    
+    .form_row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_col_1{
+        width: 100%;
+        background-color: #1089ff !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form_control {
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .hero_content{
+        padding: 30px;
+    }
+
+    .hero_content h1{
+        color: #ffff;
+        font-size: 44px;
+        margin-top: 40px;
+    }
+
+
+    .form_row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_col_1{
+        width: 100%;
+        background-color: #1089ff !important;
+        display: flex;
+        justify-content: unset;
+    }
+
+    .form_control {
+        font-size: 8px;
+    }
+
+    .form_box_row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_box{
+        padding:0px 0px;
+        background-color: white;
+        box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
+    }
+}
