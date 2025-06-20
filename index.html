@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="./assets/js/script.js"></script>
+
     <title>Carbook</title>
 </head>
 <body>
@@ -35,7 +37,7 @@
         <div class="hero_container">
             <div class="hero_row">
                 <div class="hero_col">
-                    <div class="hero_content">
+                    <div class="hero_content" data-aos="fade-up" data-aos-duration="3000">
                         <h1>Fast & Easy Way To Rent A Car</h1>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts</p>
                     </div>
@@ -48,7 +50,7 @@
             <div class="form_row">
                 <div class="form_col_1">
                     <div class="form_box_1">
-                        <form action="">
+                        <form data-aos="fade-up" data-aos-duration="3000">
                             <h2>Make your trip</h2>
                             <div class="form_group">
                                 <label>Pick-up location</label>
@@ -82,7 +84,7 @@
                     <div class="form_box">
                         <h3 class="heading_section ">Better Way to Rent Your Perfect Cars</h3>
                         <div class="form_box_row">
-                            <div class="form_box_col">
+                            <div class="form_box_col" data-aos="fade-up" data-aos-duration="3000">
                                 <div class="form_box_col_content">
                                     <div class="box_icon">
                                         <img src="./assets/images/route.png" alt="">
@@ -92,7 +94,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form_box_col">
+                            <div class="form_box_col" data-aos="fade-up" data-aos-duration="3000">
                                  <div class="form_box_col_content">
                                     <div class="box_icon">
                                         <img src="./assets/images/communication.png" alt="">
@@ -102,7 +104,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form_box_col">
+                            <div class="form_box_col" data-aos="fade-up" data-aos-duration="3000">
                                  <div class="form_box_col_content">
                                     <div class="box_icon">
                                         <img src="./assets/images/car-rent.png" alt="">
@@ -118,8 +120,23 @@
             </div>
         </div>
     </section>
-</body>
+    <section>
+        <div class="slider_container">
+            <div class="slider_row">
+                <div class="slider_col">
+                    <div class="content_box">
+                        <h3>WHAT WE OFFER</h3>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script>
   const navLinks = document.getElementById("myDIV");
 
