@@ -633,6 +633,7 @@ input:focus{
         top: 55px;
         left: 0;
         width: 100%;
+        z-index: 1;
       }
 
 
@@ -760,8 +761,6 @@ input:focus{
     font-weight: 400;
     color: #999999;
 }
-
-
     
 }
 
