@@ -295,18 +295,83 @@ input:focus{
     width: 100%;
     display: flex;
     flex-direction: row;
+    /* padding: 0px 15px; */
+    gap: 30px;
 }
 
 .slider_card{
-    width: 30%;
-    height: 100px;
+    width: 33.33%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .slider_card img{
-    width: 300px;
+    width: 349px;
     height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
 }
 
+
+.slider_content{
+    border-top: none;
+    padding: 20px 30px 30px;
+}
+
+.slider_content h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.slider_content h2 a{
+    color:var(--secondary-color) ;
+}
+  
+.slider_content_span{
+    display: flex;
+    flex-direction: row;
+}
+.slider_content_span span{
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+}
+
+.slider_content_span p{
+    color: #1089ff;
+    margin-bottom: 0;
+    font-weight: 600;
+    margin-left: auto !important;
+}
+
+.slider_content_span p span{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.slider_button{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.slider_content div a{
+    padding: 10px;
+    width: 48%;
+    background: #1089ff;
+    color: #fff !important;
+    border-radius: 4px;
+    text-align: center;
+}
+.details{
+    background: var(--green-color) !important   ;
+}
 
 
 
@@ -351,6 +416,29 @@ input:focus{
         background-color: white;
         box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
     }
+
+
+    .slider_card_col{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.slider_card{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.slider_card img{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+}
 
 }
 
@@ -425,6 +513,29 @@ input:focus{
         font-size: 14px;
         color: var(--secondary-color);
     }
+
+        
+.slider_card_col{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.slider_card{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.slider_card img{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+}
 
     
 
@@ -521,6 +632,31 @@ input:focus{
         width: 100%;
         padding: 0px 15px 0px 15px;
     }
+
+    
+.slider_card_col{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.slider_card{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.slider_card img{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+}
+
+
     
 }
 
@@ -583,25 +719,26 @@ input:focus{
         padding: 0px 15px 0px 15px;
     }
 
+.slider_card_col{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
-    .slider_card_col{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+.slider_card{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
 
-    .slider_card{
-        width: 30%;
-        height: 500px;
-    }
+.slider_card img{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+}
 
-    .slider_img{
-        width: 200px;
-        height: 200px;
-    }
-
-
-
-
-    
 }
