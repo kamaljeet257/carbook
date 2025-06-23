@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="./assets/js/script.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Carbook</title>
 </head>
 <body>
@@ -233,6 +232,44 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_row">
+                <div class="footer_col">
+                    <div class="footer_box_1">
+                        <h2>
+                            <a href="#" class="logo">Car<span>book</span></a>
+                        </h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_col">
+                </div>
+                <div class="footer_col">
+                </div>
+                <div class="footer_col">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 
@@ -241,28 +278,6 @@
 <script>
   AOS.init();
 </script>
-<script>
-  const navLinks = document.getElementById("myDIV");
-
- 
-  function toggleMenu() {
-    if (navLinks.style.display === "block") {
-      navLinks.style.display = "none";
-    } else {
-      navLinks.style.display = "block";
-    }
-  }
-
-  function handleResize() {
-    if (window.innerWidth >= 769) {
-      navLinks.style.display = "flex";
-    } else {
-      navLinks.style.display = "none";
-    }
-  }
-
-  window.addEventListener("load", handleResize);
-  window.addEventListener("resize", handleResize);
-</script>
+  <script src="./assets/js/script.js"></script>
 </html>
 
