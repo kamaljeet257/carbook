@@ -545,6 +545,12 @@ footer{
     display: flex;
 }
 
+.copyright{
+    display: flex;
+}
+.copyright p{
+    color: rgba(255, 255, 255, 0.7);
+}
 
 
 
