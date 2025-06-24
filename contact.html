@@ -9,129 +9,85 @@
     <title>Carbook</title>
 
     <style>
-/* Hero Section */
-.hero {
-  background-image: url('./assets/images/about.jpg'); /* Use your image path */
-  background-size: cover;
-  background-position: top;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+        
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.contact-section {
+  background: #fff;
+  padding: 40px 20px;
+}
+
+.contact-section h2 {
   text-align: center;
-  position: relative;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #333;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+.contact-box {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  padding: 0 20px;
+.contact-info, .contact-form {
+  flex: 1 1 45%;
+  background-color: #f0f0f0;
+  padding: 25px;
+  border-radius: 8px;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.contact-info h3, .contact-form h3 {
   margin-bottom: 15px;
+  font-size: 24px;
+  color: #444;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 25px;
+.contact-info p {
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.hero-btn {
-  background-color: #01d28e;
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
   color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.hero-btn:hover {
-  background-color:#01d28e;
+.contact-form button:hover {
+  background-color: #0056b3;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .hero {
-    height: 60vh;
-    z-index: 0;
-  }
-}
-
-
-      /* Services Section */
-.services-section {
-  padding: 60px 0;
-  background-color: #f4f4f4;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.services-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.service-box {
-  background: white;
-  flex: 1 1 calc(50% - 20px);
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.service-box img {
-  width: 100%;
-  height: 400px;
-  margin-bottom: 15px;
-}
-
-/* Footer */
-.footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav {
-    float: none;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .services-grid {
+  .contact-box {
     flex-direction: column;
   }
 
-  .service-box {
+  .contact-info, .contact-form {
     flex: 1 1 100%;
   }
 }
@@ -161,92 +117,37 @@
             </div>
          </div>
     </header>
-<section class="hero">
-  <div class="hero-content">
-    <h1>Our Services</h1>
-    <p>Reliable, Affordable, and Professional Car Booking Services</p>
-    <a href="#services" class="hero-btn">Explore Services</a>
-  </div>
-</section>
 
-<section class="services-section">
+<section class="contact-section">
     <div class="container">
-      <h2 class="section-title">Our Services</h2>
-      <div class="services-grid">
-        <div class="service-box">
-          <img src="./assets/images/five_car.jpg" alt="Airport Pickup">
-          <h3>Airport Pickup</h3>
-          <p>Reliable airport pick-up and drop-off services anytime, anywhere.</p>
+      <h2>Contact Us</h2>
+      <div class="contact-box">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><strong>Address:</strong> 123 Rent St, CarCity, India</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Email:</strong> support@carrent.com</p>
+          <iframe 
+            src="https://maps.google.com/maps?q=Delhi&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="200" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
         </div>
-        <div class="service-box">
-          <img src="./assets/images/four_img.jpg" alt="City Tour">
-          <h3>City Tours</h3>
-          <p>Explore the city with our comfortable and professional car tours.</p>
-        </div>
-        <div class="service-box">
-          <img src="./assets/images/three_car.jpg" alt="Luxury Rentals">
-          <h3>Luxury Rentals</h3>
-          <p>Choose from premium cars for business, weddings or special events.</p>
-        </div>
-        <div class="service-box">
-          <img src="./assets/images/second_car.jpg" alt="Driver Services">
-          <h3>Chauffeur Drivers</h3>
-          <p>Professional drivers at your service for a smooth travel experience.</p>
+        <div class="contact-form">
+          <h3>Send Message</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
     </div>
   </section>
-  <section id="service">
-        <div class="service_container">
-            <div class="service_row" data-aos="fade-up" data-aos-duration="3000">
-                <div class="service_col">
-                    <span>Services</span>
-                    <h2>Our Latest Services</h2>
-                </div>
-            </div>
-            <div class="service_row">
-                <div class="service_col_content">
-                    <div class="service_content_box">
-                        <div class="service_icon">
-                            <img src="./assets/images/location.png" alt="">
-                        </div>
-                        <div class="service_content">
-                            <h3 class="heading mb-2">Wedding Ceremony</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                    <div class="service_content_box">
-                        <div class="service_icon">
-                            <img src="./assets/images/touring.png" alt="">
-                        </div>
-                        <div class="service_content">
-                            <h3 class="heading mb-2">City Transfer</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                    <div class="service_content_box">
-                        <div class="service_icon">
-                            <img src="./assets/images/airport-taxi.png" alt="">
-                        </div>
-                        <div class="service_content">
-                            <h3 class="heading mb-2">Airport Transfer</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                    <div class="service_content_box">
-                        <div class="service_icon">
-                            <img src="./assets/images/touring.png" alt="">
-                        </div>
-                        <div class="service_content">
-                            <h3 class="heading mb-2">Whole City Tour</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
 
 

@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CarBook</title>
-  <link rel="stylesheet" href="./assets/css/about.css"/>
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <title>Carbook</title>
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
+    <header>
          <div class="container">
             <div class="row"> 
                 <div class="col">
@@ -26,59 +24,75 @@
                    <nav id="myDIV">
                         <ul>
                             <li><a href="./index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="./about.html">About</a></li>
                             <li><a href="./service.html">Servies</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
                 </div> 
             </div>
          </div>
     </header>
-
-     <section class="about_hero">
-        <div class="about_hero_container">
-            <div class="about_hero_row">
-                <div class="about_hero_col">
-                    <div class="about_hero_content" data-aos="fade-up" data-aos-duration="3000">
-                      <a href="./index.html">HOME </a>&#10095;<span>ABOUT US </span>&#10095;
-                        <h1>About Us</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-  <div class="container" id="about">
-    <div class="image-section"></div>
-    <div class="about-content">
-      <span class="subheading">About Us</span>
-      <h2>Welcome to Carbook</h2>
-      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country...</p>
-      <p>On her way she met a copy. The copy warned the Little Blind Text... and the Little Blind Text should return to its own safe country.</p>
-      <a href="#" class="btn">Search Vehicle</a>
-    </div>
-  </div><br><br>
-
-<!--  -->
- <!-- <section class="driver-section"> -->
-    <!-- <div class="driver-text"> -->
-      <!-- <h2>Do You Want To Earn With Us?<br> So Don’t Be Late.</h2> -->
-      <!-- <a href="#" class="button">Become A Driver</a> -->
-    <!-- </div> -->
-    <!-- <div class="driver-image"> -->
-      <!-- <img src="./assets/images/five_car.jpg" alt="Driver and customer" /> -->
-    <!-- </div> -->
-  <!-- </section> -->
-<!-- <br><br> -->
-
-<section id="driver_section">
-  <div class="driver_section">
-
+    <!-- About Company -->
+  <section class="hero">
+  <div class="hero-content">
+    <h1>About Us</h1>
+    <a href="#services" class="hero-btn">Explore Services</a>
   </div>
 </section>
-   <footer>
+
+  <!-- Why Choose Us -->
+  <section class="why-us-section">
+    <div class="container">
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>✔ Wide range of cars</li>
+        <li>✔ 24/7 customer support</li>
+        <li>✔ Affordable pricing</li>
+        <li>✔ Easy online booking</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="team-section">
+    <div class="container">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="./assets/images/1.webp" alt="Team Member">
+          <h4>John Doe</h4>
+          <p>CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/images/2.jpg" alt="Team Member">
+          <h4>Jane Smith</h4>
+          <p>Operations Head</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/images/3.jpg" alt="Team Member">
+          <h4>Ali Khan</h4>
+          <p>Marketing Manager</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery-section">
+    <div class="container">
+      <h2>Our Gallery</h2>
+      <div class="gallery-grid">
+        <img src="./assets/images/frist_car.jpg" alt="Car 1">
+        <img src="./assets/images/second_car.jpg" alt="Car 2">
+        <img src="./assets/images/three_car.jpg" alt="Car 3">
+        <img src="./assets/images/four_img.jpg" alt="Car 4">
+      </div>
+    </div>
+  </section>
+  
+   
+    <footer>
         <div class="footer_container">
             <div class="footer_row">
                 <div class="footer_col">
@@ -154,12 +168,14 @@
             </div>
         </div>
     </footer>
-<script src="./assets/js/script.js"></script>
+</body>
+
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
-</body>
+<script src="./assets/js/script.js"></script>
 </html>
+
