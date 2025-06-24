@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CarBook</title>
-  <link rel="stylesheet" href="./assets/css/about.css"/>
-  <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Our Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <style>
+    .hero-section {
+      background-color: #ccc;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero-section .breadcrumb {
+      justify-content: center;
+      background: transparent;
+    }
+
+    .service-icon {
+      background-color: #007bff;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: white;
+      font-size: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .service-icon:hover {
+      transform: scale(1.1);
+    }
+
+    
+    .header{
+      background-image: url("{{ url_for('static', filename='serv.jpeg') }}");
+      background-size: 100% 100%;
+      background-position: center;
+      border-radius: 20px;
+      position:sticky;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
+     <header>
          <div class="container">
             <div class="row"> 
                 <div class="col">
@@ -25,9 +74,9 @@
                 <div class="col">
                    <nav id="myDIV">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="./service.html">Servies</a></li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="#">Servies</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
                     </nav>
@@ -36,49 +85,68 @@
          </div>
     </header>
 
-     <section class="about_hero">
-        <div class="about_hero_container">
-            <div class="about_hero_row">
-                <div class="about_hero_col">
-                    <div class="about_hero_content" data-aos="fade-up" data-aos-duration="3000">
-                      <a href="./index.html">HOME </a>&#10095;<span>ABOUT US </span>&#10095;
-                        <h1>About Us</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-  <div class="container" id="about">
-    <div class="image-section"></div>
-    <div class="about-content">
-      <span class="subheading">About Us</span>
-      <h2>Welcome to Carbook</h2>
-      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country...</p>
-      <p>On her way she met a copy. The copy warned the Little Blind Text... and the Little Blind Text should return to its own safe country.</p>
-      <a href="#" class="btn">Search Vehicle</a>
-    </div>
-  </div><br><br>
-
-<!--  -->
- <!-- <section class="driver-section"> -->
-    <!-- <div class="driver-text"> -->
-      <!-- <h2>Do You Want To Earn With Us?<br> So Don’t Be Late.</h2> -->
-      <!-- <a href="#" class="button">Become A Driver</a> -->
-    <!-- </div> -->
-    <!-- <div class="driver-image"> -->
-      <!-- <img src="./assets/images/five_car.jpg" alt="Driver and customer" /> -->
-    <!-- </div> -->
-  <!-- </section> -->
-<!-- <br><br> -->
-
-<section id="driver_section">
-  <div class="driver_section">
-
+<!-- Hero Section -->
+<section class="hero-section header" data-aos="fade-down">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item active text-white" aria-current="page">Services</li>
+      </ol>
+    </nav>
+    <h1 class="display-5 ">Our Services</h1>
   </div>
 </section>
-   <footer>
+
+<!-- Services Section -->
+<section class="py-5">
+  <div class="container text-center">
+    <p class="text-uppercase text-primary fw-bold" data-aos="fade-up" data-aos-delay="100">Services</p>
+    <h2 class="fw-bold mb-5" data-aos="fade-up" data-aos-delay="200">Our Latest Services</h2>
+    <div class="row g-4">
+      <!-- Service Item -->
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="service-icon">
+          <i class="bi bi-heart-fill"></i>
+        </div>
+        <h5 class="fw-bold">Wedding Ceremony</h5>
+        <p class="text-muted">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+      <!-- Service Item -->
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="service-icon">
+          <i class="bi bi-truck"></i>
+        </div>
+        <h5 class="fw-bold">City Transfer</h5>
+        <p class="text-muted">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+      <!-- Service Item -->
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
+        <div class="service-icon">
+          <i class="bi bi-airplane-engines"></i>
+        </div>
+        <h5 class="fw-bold">Airport Transfer</h5>
+        <p class="text-muted">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+      <!-- Service Item -->
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="600">
+        <div class="service-icon">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <h5 class="fw-bold">Whole City Tour</h5>
+        <p class="text-muted">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Call to Action -->
+    <div class="mt-5 p-5 bg-light text-primary text-center rounded  divclass" data-aos="fade-up" data-aos-delay="700">
+        <h4 class="mb-3">Do You Want To Earn With Us? So Don't Be Late.</h4>
+        <a href="#" class="btn btn-primary text-white fw-bold px-4 py-2">Join Now</a>
+    </div>
+  
+</section>
+<!-- Footer Section -->
+ <footer>
         <div class="footer_container">
             <div class="footer_row">
                 <div class="footer_col">
@@ -154,12 +222,19 @@
             </div>
         </div>
     </footer>
-<script src="./assets/js/script.js"></script>
+  
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init();
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
 </script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
